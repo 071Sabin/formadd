@@ -17,11 +17,11 @@ function createListItems( arr ){
 
 function displayItems(){
     document.getElementById('listItems').innerHTML=`
-        <ul class="mt-4 grid gap-4 grid-cols-6">
+        <ul class="m-4 grid gap-4 grid-cols-2 md:grid-cols-4 lg:grid-cols-6">
             ${createListItems(a1)}
         </ul>
     `;
-    console.log("done");
+    // console.log("done");
 };
 
 displayItems();
@@ -40,7 +40,7 @@ btn1.addEventListener('click', function(){
         input_college.value ='';
         input_faculty.value='';
         input_namee.value='';
-        console.log(a1);
+        // console.log(a1);
 
         displayItems();
     }
